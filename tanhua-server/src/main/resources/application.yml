@@ -1,0 +1,58 @@
+server:
+  port: 10880
+dubbo:
+  application:
+    name: tanhua-server
+  registry:
+    address: zookeeper://10.10.20.0:2181
+  consumer:
+    check: false
+# log
+logging:
+  level:
+    root: info
+    com:
+      tanhua: debug
+  pattern:
+    console: '%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level [%thread] %msg - %logger{15}%n\'
+tanhua:
+  huanxin:
+    url: http://a31.easemob.com/
+    orgName: 1102210609231351
+    appName: tanhua258
+    clientId: YXA6uGKt0RFfR7q7hy8HGkfaKg
+    clientSecret: YXA6DPZJR2JISphG8nd5c3pUDOcKa8w
+  secret: 76bd425b6f29f7fcc2e0bfc286043df1
+  redisValidateCodeKeyPrefix: VALIDATECODE_
+  face:
+    appId: 24290284
+    apiKey: KlhiFCDMwlVDSyIPUViEmf9g
+    secretKey: Nq1EK1wTGmjAE9SZHcxfkEm5pIGbjfRG
+  oss:
+    endpoint: http://oss-cn-shenzhen.aliyuncs.com
+    bucketName: tanhua111danshui
+    url: https://tanhua111danshui.oss-cn-shenzhen.aliyuncs.com
+    accessKeyId: LTAI5tC8gbfqBCb2V35uWUFH
+    accessKeySecret: l4l7dnHfsn3hAE2VgfeXetuaB33ptc
+  sms:
+    validateCodeTemplateCode: SMS_204761533
+    signName: 传智播客
+    parameterName: code
+    accessKeyId: LTAI5tC8gbfqBCb2V35uWUFH
+    accessKeySecret: l4l7dnHfsn3hAE2VgfeXetuaB33ptc
+spring:
+  redis:
+    host: 10.10.20.0
+    port: 6379
+rocketmq:
+  name-server: 10.10.20.0:9876
+  producer:
+    group: tanhua
+fdfs:
+  so-timeout: 1500
+  connect-timeout: 600
+  thumb-image:
+    width: 150
+    height: 150
+  tracker-list: 10.10.20.0:22122
+  web-server-url: http://10.10.20.0:8888/

@@ -1,0 +1,60 @@
+server:
+  port: 18083
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/db2?useUnicode=true&characterEncoding=utf8&autoReconnect=true&allowMultiQueries=true&useSSL=false
+    password: root
+    username: root
+  redis:
+    port: 6379
+    host: 10.10.20.0
+dubbo:
+  application:
+    name: tanhua-manage
+  registry:
+    address: zookeeper://10.10.20.0:2181
+  consumer:
+    check: false
+tanhua:
+  secret: 76bd425b6f29f7fcc2e0bfc286043df1
+  face:
+    appId: 24290284
+    apiKey: KlhiFCDMwlVDSyIPUViEmf9g
+    secretKey: Nq1EK1wTGmjAE9SZHcxfkEm5pIGbjfRG
+  oss:
+    endpoint: http://oss-cn-shenzhen.aliyuncs.com
+    bucketName: tanhua111danshui
+    url: https://tanhua111danshui.oss-cn-shenzhen.aliyuncs.com
+    accessKeyId: LTAI5tC8gbfqBCb2V35uWUFH
+    accessKeySecret: l4l7dnHfsn3hAE2VgfeXetuaB33ptc
+  sms:
+    validateCodeTemplateCode: SMS_204761533
+    signName: 传智播客
+    parameterName: code
+    accessKeyId: LTAI5tC8gbfqBCb2V35uWUFH
+    accessKeySecret: l4l7dnHfsn3hAE2VgfeXetuaB33ptc
+  huanxin:
+    url: http://a31.easemob.com/
+    orgName: 1102210609231351
+    appName: tanhua258
+    clientId: YXA6uGKt0RFfR7q7hy8HGkfaKg
+    clientSecret: YXA6DPZJR2JISphG8nd5c3pUDOcKa8w
+  huawei:
+    username: hw23848243
+    password: aaqq!!
+    project: cn-east-3
+    domain: hw23848243
+      # 图片检测内容 politics：是否涉及政治人物的检测，terrorism：是否包含涉政暴恐元素的检测，porn：是否包含涉黄内容元素的检测，ad：是否包含广告的检测（公测特性），all：包含politics、terrorism和porn三种场景的检测
+    categoriesImage: politics,terrorism,porn
+      # 文字检测内容 politics：涉政，porn：涉黄，ad：广告，abuse：辱骂，contraband：违禁品，flood：灌水
+    categoriesText: politics,porn,ad,abuse,contraband,flood
+    textApiUrl: https://moderation.cn-east-3.myhuaweicloud.com/v1.0/moderation/text
+    imageApiUrl: https://moderation.cn-east-3.myhuaweicloud.com/v1.0/moderation/image/batch
+mybatis-plus:
+  global-config:
+    db-config:
+      table-prefix: tb_    #数据库表前缀
+      id-type: auto        #数据库表主键的策略
+rocketmq:
+  name-server: 10.10.20.0:9876

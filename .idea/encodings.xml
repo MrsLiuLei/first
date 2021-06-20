@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/dubbo/tanhua-dubbo-interface/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dubbo/tanhua-dubbo-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mongoDB/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tanhua-commons/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tanhua-domin/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tanhua-jobs/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tanhua-manage/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tanhua-server/src/main/java" charset="UTF-8" />
+  </component>
+</project>
